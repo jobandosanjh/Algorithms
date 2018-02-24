@@ -7,7 +7,7 @@ import com.google.common.collect.ImmutableMap;
 public final class InfixToPostfix {
 
     private String[] operatorStack;
-    private Map<String, Integer> operands = ImmutableMap.<String, Integer> of("+", 16, "-", 16, "*", 18, "/", 16);
+    private Map<String, Integer> operands = ImmutableMap.of("+", 16, "-", 16, "*", 18, "/", 16);
 
     public String getPostfixExpression(final String infix) {
         final StringBuilder postfixExpression = new StringBuilder();
